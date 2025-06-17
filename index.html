@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diclofenac - Complete Drug Information</title>
+    <style>
+        :root {
+            --primary-color: #2a5c8d;
+            --secondary-color: #4a8bc9;
+            --accent-color: #e74c3c;
+            --light-bg: #f5f9fd;
+            --dark-text: #2c3e50;
+            --light-text: #ecf0f1;
+            --sidebar-width: 250px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            background-color: #f0f4f8;
+            color: var(--dark-text);
+            line-height: 1.6;
+            padding-top: 80px; /* Space for logo */
+        }
+        
+        /* Logo Styles */
+        .logo-container {
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-container.small {
+            padding: 5px 0;
+        }
+        
+        .logo {
+            height: 70px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-container.small .logo {
+            height: 50px;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            height: calc(100vh - 80px);
+            position: fixed;
+            overflow-y: auto;
+            padding: 20px 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            top: 80px;
+        }
+        
+        /* Main Content Styles */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        
+        /* ... (rest of your existing CSS styles remain the same) ... */
+    </style>
+</head>
+<body>
+    <!-- Logo at Top Center -->
+    <div class="logo-container" id="logoContainer">
+        <img src="pharma_logo.png" alt="Pharmaceutical Company Logo" class="logo">
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Diclofenac</h2>
+            <p>Everything you need to know!</p>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#description" class="active">Description</a></li>
+            <li><a href="#chemical-structure">Chemical Structure</a></li>
+            <!-- ... (rest of your sidebar navigation) ... -->
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- ... (all your existing content) ... -->
+    </div>
+
+    <script>
+        // Logo shrink effect on scroll
+        window.addEventListener('scroll', function() {
+            const logoContainer = document.getElementById('logoContainer');
+            if (window.scrollY > 50) {
+                logoContainer.classList.add('small');
+            } else {
+                logoContainer.classList.remove('small');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active class in sidebar
+                document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Highlight current section in sidebar while scrolling
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const scrollPosition = window.scrollY;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diclofenac - Complete Drug Information</title>
+    <style>
+        :root {
+            --primary-color: #2a5c8d;
+            --secondary-color: #4a8bc9;
+            --accent-color: #e74c3c;
+            --light-bg: #f5f9fd;
+            --dark-text: #2c3e50;
+            --light-text: #ecf0f1;
+            --sidebar-width: 250px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            background-color: #f0f4f8;
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            padding: 20px 0;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-header h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .sidebar-header p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .sidebar-nav {
+            list-style: none;
+        }
+        
+        .sidebar-nav li {
+            margin-bottom: 5px;
+        }
+        
+        .sidebar-nav a {
+            display: block;
+            color: var(--light-text);
+            text-decoration: none;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            font-weight: 500;
+        }
+        
+        .sidebar-nav a:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .sidebar-nav a.active {
+            background-color: rgba(255,255,255,0.15);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        /* Main Content Styles */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 30px;
+            max-width: 1200px;
+        }
+        
+        .header {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .drug-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .drug-subtitle {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        .drug-structure {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-bg);
+            font-weight: 600;
+        }
+        
+        .underline {
+            text-decoration: underline;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--light-bg);
+            padding: 12px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 10px 12px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .indications-list {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+        
+        .indications-list li {
+            margin-bottom: 10px;
+        }
+        
+        .adverse-reactions {
+            margin-top: 20px;
+        }
+        
+        .reaction-severity {
+            font-weight: 600;
+            margin: 20px 0 10px;
+            color: var(--primary-color);
+        }
+        
+        .reaction-severity.mild {
+            color: #27ae60;
+        }
+        
+        .reaction-severity.moderate {
+            color: #f39c12;
+        }
+        
+        .reaction-severity.severe {
+            color: #e74c3c;
+        }
+        
+        .counseling-points {
+            margin-left: 20px;
+        }
+        
+        .counseling-points li {
+            margin-bottom: 15px;
+        }
+        
+        .brands-table img {
+            max-width: 100px;
+            max-height: 60px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .reference-list {
+            list-style-type: none;
+        }
+        
+        .reference-list li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .drug-structure {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Diclofenac</h2>
+            <p>Everything you need to know!</p>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#description" class="active">Description</a></li>
+            <li><a href="#chemical-structure">Chemical Structure</a></li>
+            <li><a href="#indications">Indications</a></li>
+            <li><a href="#pharmacokinetics">Pharmacokinetics</a></li>
+            <li><a href="#pharmacodynamics">Pharmacodynamics</a></li>
+            <li><a href="#mechanism-of-action">Mechanism of Action</a></li>
+            <li><a href="#adverse-reactions">Adverse Reactions</a></li>
+            <li><a href="#contraindications">Contraindications</a></li>
+            <li><a href="#pregnancy-lactation">Pregnancy & Lactation</a></li>
+            <li><a href="#patient-counseling">Patient Counseling</a></li>
+            <li><a href="#dosage-schedule">Dosage Schedule</a></li>
+            <li><a href="#drug-interactions">Drug Interactions</a></li>
+            <li><a href="#brands">Available Brands</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <div>
+                <h1 class="drug-title">Diclofenac</h1>
+                <p class="drug-subtitle">Everything you need to know!</p>
+            </div>
+            <img src="diclofenac_structure.png" alt="Diclofenac structure" class="drug-structure">
+        </div>
+
+        <!-- Description Section -->
+        <div class="section" id="description">
+            <h2 class="section-title">Description</h2>
+            <p><strong>WHO Essential Medication List: Not Included</strong></p>
+            <p>Diclofenac is a phenylacetic acid derivative. It is a product of rational drug design based on the structures of <a href="https://go.drugbank.com/drugs/DB00812">phenylbutazone</a>, <a href="https://go.drugbank.com/drugs/DB00784">mefenamic acid</a>, and <a href="https://go.drugbank.com/drugs/DB00328">indomethacin</a>. The addition of two chlorine groups in the ortho position of the phenyl ring locks the ring in maximal torsion which appears to be related to increased potency. Diclofenac was first approved by the FDA in July 1988 under the trade name Voltaren, marketed by Novartis (previously Ciba-Geigy).</p>
+        </div>
+
+        <!-- Chemical Structure Section -->
+        <div class="section" id="chemical-structure">
+            <h2 class="section-title">Chemical Structure of Diclofenac</h2>
+            <div class="image-container">
+                <img src="diclofenac_structure.png" alt="Diclofenac chemical structure">
+            </div>
+            <p><strong>Chemical Formula:</strong> C<sub>14</sub>H<sub>11</sub>Cl<sub>2</sub>NO<sub>2</sub></p>
+            <p><strong>Molecular Weight:</strong> 296.149 g/mol</p>
+            <p><strong>Drug Class:</strong> Non Steroidal Anti Inflammatory Drug</p>
+        </div>
+
+        <!-- Indications Section -->
+        <div class="section" id="indications">
+            <h2 class="section-title">Indications</h2>
+            <ol>
+                <li><strong>Musculoskeletal and Joint Disorders</strong>
+                    <ul class="indications-list">
+                        <li>Osteoarthritis (To relieve signs and symptoms such as joint pain, swelling, and stiffness)</li>
+                        <li>Rheumatoid arthritis</li>
+                        <li>Ankylosing spondylitis</li>
+                    </ul>
+                </li>
+                <li><strong>Acute Pain Conditions</strong>
+                    <ul class="indications-list">
+                        <li>Postoperative pain (e.g., after dental, or orthopedic, or abdominal surgery)</li>
+                        <li>Muscle pain (e.g., sprains, strains)</li>
+                        <li>Back pain or low back pain</li>
+                        <li>Trauma-related soft tissue inflammation</li>
+                    </ul>
+                </li>
+                <li><strong>Gynecological Conditions</strong>
+                    <ul class="indications-list">
+                        <li>Primary dysmenorrhea (painful menstrual cramps)</li>
+                        <li>Pain related to intrauterine device (IUD) insertion or pelvic inflammatory disease (supportive)</li>
+                    </ul>
+                </li>
+                <li><strong>Dental and ENT Conditions</strong>
+                    <ul class="indications-list">
+                        <li>Post-dental surgery pain</li>
+                        <li>Tonsillitis, pharyngitis-related throat pain (when inflammation is significant)</li>
+                    </ul>
+                </li>
+                <li><strong>Gout</strong>
+                    <ul class="indications-list">
+                        <li>Acute gout attacks (Short-term management of pain and inflammation)</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Pharmacokinetics Section -->
+        <div class="section" id="pharmacokinetics">
+            <h2 class="section-title">Pharmacokinetics (ADME)</h2>
+            <table>
+                <tr>
+                    <th>Absorption</th>
+                    <td>
+                        <ul>
+                            <li>Rapidly absorbed when given as an oral solution, sugar-coated tablets, rectal suppository, or by intramuscular injection.</li>
+                            <li>Slow absorption as enteric coated tablet specially when given with food</li>
+                            <li>Oral bioavailability: ~50% due to first-pass metabolism.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Distribution</th>
+                    <td>
+                        <ul>
+                            <li>99% bound to plasma proteins (mainly albumin).</li>
+                            <li>Volume of distribution (Vd): 0.12--0.17 L/kg.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Metabolism</th>
+                    <td>
+                        <ul>
+                            <li>Extensively metabolized in the liver via CYP2C9 to hydroxylated and conjugated metabolites.</li>
+                            <li>metabolised to 4′-hydroxydiclofenac, 5-hydroxydiclofenac, 3′-hydroxydiclofenac and 4′,5-dihydroxydiclofenac</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Excretion</th>
+                    <td>
+                        <ul>
+                            <li>Excrete as glucuronide and sulfate conjugates:
+                                <ul>
+                                    <li>Urine (about 60%)</li>
+                                    <li>Bile (about 35%);</li>
+                                    <li>less than 1% is excreted as unchanged diclofenac.</li>
+                                </ul>
+                            </li>
+                            <li>Terminal Half life : 1-2 hrs</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Pharmacodynamics Section -->
+        <div class="section" id="pharmacodynamics">
+            <h2 class="section-title">Pharmacodynamics</h2>
+            <table>
+                <tr>
+                    <th>Onset of Action</th>
+                    <th>Peak Plasma Concentration</th>
+                    <th>Duration of Action</th>
+                    <th>Plasma Clearance</th>
+                    <th>BCS class</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>30 minutes (for oral dosage forms)</li>
+                            <li>10 minutes (for intramuscular injection)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>1 to 2 hours (oral diclofenac sodium)</li>
+                            <li>0.5 to 1 hour (oral diclofenac potassium -- faster absorption)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>6 to 8 hours (oral)</li>
+                            <li>Up to 12 hours (modified-release forms)</li>
+                        </ul>
+                    </td>
+                    <td>16L/hour</td>
+                    <td>BCS Class II (low solubility, high permeability)</td>
+                </tr>
+            </table>
+            
+            <h3 style="margin-top: 20px;">In Vitro--In Vivo Correlation (IVIVC):</h3>
+            <p>Diclofenac, a BCS Class II drug, exhibits <strong>low solubility</strong> and <strong>high permeability</strong>, making its <strong>dissolution rate the critical determinant of bioavailability</strong>. Immediate-release formulations tend to show rapid dissolution and correlate well with <strong>early Tmax values</strong>. In contrast, extended-release formulations show <strong>slower in vitro dissolution</strong>, which aligns with <strong>flattened and delayed plasma concentration--time curves</strong>.</p>
+            <p>IVIVC models are especially useful in predicting the performance of new sustained-release diclofenac formulations. A <strong>Level A correlation</strong> has been demonstrated in some studies, indicating a <strong>point-to-point relationship</strong> between in vitro dissolution and in vivo absorption. Such models can be used to justify <strong>biowaivers</strong> and reduce clinical testing during product development.</p>
+            
+            <div class="image-container">
+                <img src="pharmacokinetics_graph.png" alt="Quantification of diclofenac pharmacokinetics">
+                <p class="underline">Quantification of diclofenac pharmacokinetics in 7-MPS platform.</p>
+                <p>Samples for diclofenac (DCF) PK were collected from each compartment and quantified for parent drug (DCF, black symbols) and its primary metabolite (4-OH-DCF, red symbols). Individual points represent measurements from different platforms. The results were analyzed with PBPK models, illustrated by solid curves spanning the 48-hour experimental duration.</p>
+            </div>
+        </div>
+
+        <!-- Mechanism of Action Section -->
+        <div class="section" id="mechanism-of-action">
+            <h2 class="section-title">Mechanism of Action</h2>
+            <p><strong>• Pain Modulation:</strong><br>
+            PGE2 is the main prostaglandin involved in nociception. It sensitizes peripheral nerves via EP1 (Gq) and EP4 (Gs) receptors, enhancing TRPV1, sodium channels, and reducing potassium currents---lowering the threshold for pain. Centrally, EP2 receptors increase excitatory neurotransmitters (glutamate, CGRP, substance P) and enhance NMDA/AMPA activity while inhibiting glycinergic neurons, contributing to central sensitization.</p>
+            
+            <p><strong>• Inflammation:</strong><br>
+            PGE2 and PGI2 promote vasodilation and immune cell recruitment via EP2, EP4, and IP receptors. They also influence T-helper cell activation, playing a role in inflammatory diseases like arthritis. PGD2 aids cytokine release through DP1 receptors.</p>
+            
+            <p><strong>• Fever:</strong><br>
+            PGE2 crosses the blood-brain barrier and activates EP3 receptors in the hypothalamus, increasing body temperature. NSAIDs reduce fever by blocking PGE2 synthesis.</p>
+        </div>
+
+        <!-- Adverse Reactions Section -->
+        <div class="section" id="adverse-reactions">
+            <h2 class="section-title">Adverse Drug Reactions</h2>
+            
+            <h3 class="reaction-severity mild">Mild (Common, often self-limiting):</h3>
+            <ul>
+                <li><strong>Gastrointestinal:</strong> Epigastric pain, nausea, vomiting, diarrhoea (7.6%)</li>
+                <li><strong>CNS-related:</strong> Headache, dizziness (0.7%)</li>
+                <li><strong>Skin:</strong> Rash, pruritus</li>
+                <li><strong>Local (Suppositories/injections):</strong> Itching, burning, injection site irritation or necrosis</li>
+                <li><strong>Ocular (oral use):</strong> Dry, gritty eyes</li>
+            </ul>
+            
+            <h3 class="reaction-severity moderate">Moderate (Require intervention or discontinuation)</h3>
+            <ul>
+                <li><strong>Gastrointestinal:</strong> Peptic ulcers, GI bleeding, colonic ulceration, pseudomembranous colitis</li>
+                <li><strong>Hepatic:</strong> Elevated liver enzymes, clinical hepatitis (often within 6 months; more common in women)</li>
+                <li><strong>Renal:</strong> Nephrotic syndrome, renal papillary necrosis</li>
+                <li><strong>Haematological:</strong> Thrombocytopenia, neutropenia, haemolytic anaemia</li>
+                <li><strong>Skin:</strong> Bullous dermatitis, erythema multiforme</li>
+                <li><strong>Electrolyte disturbances:</strong> Hyponatraemia, SIADH-like syndrome</li>
+            </ul>
+            
+            <h3 class="reaction-severity severe">Severe (Potentially life-threatening or requiring hospitalization)</h3>
+            <ul>
+                <li><strong>Liver:</strong> Fulminant hepatitis, hepatic failure (rare but reported)</li>
+                <li><strong>Blood dyscrasias:</strong> Aplastic anaemia (10× increased risk), agranulocytosis</li>
+                <li><strong>Ocular (topical use):</strong> Corneal melting, ulceration, perforation</li>
+                <li><strong>Bleeding disorders:</strong> Spontaneous bleeding, prolonged bleeding time</li>
+            </ul>
+        </div>
+
+        <!-- Contraindications Section -->
+        <div class="section" id="contraindications">
+            <h2 class="section-title">Contraindications</h2>
+            <p>Avoid Diclofenac in:</p>
+            <ul>
+                <li>Active peptic ulcer or GI bleeding</li>
+                <li>NSAID hypersensitivity (e.g., aspirin-induced asthma)</li>
+                <li>Severe heart failure or ischemic heart disease</li>
+                <li>3rd trimester of pregnancy</li>
+                <li>Severe hepatic or renal impairment</li>
+                <li>Porphyric patients</li>
+            </ul>
+        </div>
+
+        <!-- Pregnancy & Lactation Section -->
+        <div class="section" id="pregnancy-lactation">
+            <h2 class="section-title">Pregnancy & Lactation</h2>
+            <p><strong>Pregnancy:</strong></p>
+            <ul>
+                <li>Old FDA Category: <strong>C</strong> (1st & 2nd trimester), <strong>D</strong> (3rd trimester)</li>
+                <li>New FDA Labeling <strong>(PLLR):</strong>
+                    <ul>
+                        <li>Risk in 3rd trimester: Can cause premature closure of ductus arteriosus (Avoid completely.)</li>
+                        <li>In 1st/2nd trimesters: Use only if absolutely necessary.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p><strong>Lactation:</strong></p>
+            <ul>
+                <li>Safe during breastfeeding? ✅ Yes (with caution)
+                    <ul>
+                        <li>Diclofenac is excreted in very low amounts in breast milk.</li>
+                    </ul>
+                </li>
+                <li>Considered safe for short-term use at the lowest effective dose.</li>
+            </ul>
+        </div>
+
+        <!-- Patient Counseling Section -->
+        <div class="section" id="patient-counseling">
+            <h2 class="section-title">Patient Counseling Points for Diclofenac</h2>
+            <ol class="counseling-points">
+                <li><strong>Take With Food or Milk</strong><br>
+                To reduce the risk of gastric irritation, take diclofenac with meals or milk, especially in oral forms. Do not lie down immediately after taking it.</li>
+                
+                <li><strong>Avoid Alcohol:</strong><br>
+                <strong>Alcohol increases the risk of gastrointestinal bleeding</strong> when taken with diclofenac. Avoid alcohol use, especially during long-term therapy.</li>
+                
+                <li><strong>Stick to the Prescribed Dose and Duration</strong><br>
+                Do not exceed the recommended dose or continue taking diclofenac longer than prescribed, as prolonged use can increase the risk of kidney, liver, heart, and GI complications.</li>
+                
+                <li><strong>Stay Hydrated</strong><br>
+                Maintain adequate fluid intake during treatment. Diclofenac can affect kidney function, especially in the elderly or dehydrated patients.</li>
+                
+                <li><strong>Do Not Use With Other NSAIDs</strong><br>
+                Avoid using other non-steroidal anti-inflammatory drugs (like ibuprofen or naproxen) unless advised by your doctor, as this increases the risk of GI bleeding and renal toxicity.</li>
+                
+                <li><strong>Report Any Alarming Symptoms</strong><br>
+                Immediately report:
+                <ul>
+                    <li>Black or tarry stools</li>
+                    <li>Vomiting blood</li>
+                    <li>Severe stomach pain</li>
+                    <li>Shortness of breath, chest pain</li>
+                    <li>Swelling of the hands, legs, or face</li>
+                </ul></li>
+                
+                <li><strong>Special Precaution During Pregnancy</strong><br>
+                Diclofenac is not safe in the third trimester due to the risk of premature closure of the fetal ductus arteriosus. Discuss with your doctor if you are pregnant, planning pregnancy, or breastfeeding.</li>
+                
+                <li><strong>Topical Use Guidance</strong>
+                <ul>
+                    <li>For gels or patches</li>
+                    <li>Apply only on intact skin.</li>
+                    <li>Avoid exposure to sun or heat on the treated area.</li>
+                    <li>Wash hands before and after application.</li>
+                    <li>Do not use under occlusive dressings unless instructed.</li>
+                </ul></li>
+                
+                <li><strong>Avoid Missing Doses</strong><br>
+                If a dose is missed, take it as soon as you remember. Do not double the dose to make up for a missed one.</li>
+                
+                <li><strong>Caution While Driving</strong><br>
+                Diclofenac can cause dizziness or drowsiness in some people. Avoid driving or operating machinery until you know how the drug affects you.</li>
+            </ol>
+        </div>
+
+        <!-- Dosage Schedule Section -->
+        <div class="section" id="dosage-schedule">
+            <h2 class="section-title">Dosage Schedule:</h2>
+            <table>
+                <tr>
+                    <th>Dosage form</th>
+                    <th>Salt Form</th>
+                    <th>Route of Administration</th>
+                    <th>Dose and Strength</th>
+                    <th>Therapeutic Indictaion</th>
+                    <th>Maximum Recommended dose</th>
+                    <th>Frequency and Additional notes</th>
+                </tr>
+                <tr>
+                    <td>Immideate release or Extended Release</td>
+                    <td>Diclofenac Sodium or Potassium</td>
+                    <td>Oral</td>
+                    <td>75 to 150 mg/day (UK)<br>Up to 200 mg/day (USA in Rheumatoid Arthritis)</td>
+                    <td>Pain, Rheumatoid Arthritis, Osteoarthritis</td>
+                    <td>200 mg/day</td>
+                    <td>Administered in two or more divided doses</td>
+                </tr>
+                <tr>
+                    <td>Dispersible Tablet</td>
+                    <td>Diclofenac Free Acid</td>
+                    <td>Oral</td>
+                    <td>Equivalent to oral dose of diclofenac sodium</td>
+                    <td>Short-term pain management (up to 3 months)</td>
+                    <td>150 mg/day</td>
+                    <td>Same frequency as standard oral forms</td>
+                </tr>
+                <tr>
+                    <td>Film-Coated Tablet for Migraine</td>
+                    <td>Diclofenac Potassium</td>
+                    <td>Oral</td>
+                    <td>Initial dose: 50 mg<br>Additional dose: 50 mg after 2 hours if needed</td>
+                    <td>Acute migraine attacks</td>
+                    <td>200 mg/day</td>
+                    <td>May repeat every 4 to 6 hours as necessary</td>
+                </tr>
+                <tr>
+                    <td>Solution for Injection</td>
+                    <td>Diclofenac Sodium</td>
+                    <td>IM</td>
+                    <td>75 mg once daily or twice daily for severe pain</td>
+                    <td>Acute pain, renal colic</td>
+                    <td>150 mg/day</td>
+                    <td>Administered deeply into the gluteal muscle</td>
+                </tr>
+                <tr>
+                    <td>Solution for Infusion</td>
+                    <td>Diclofenac Sodium</td>
+                    <td>IV</td>
+                    <td>25 to 75 mg infused over 15 to 120 minutes<br>Maintenance infusion at 5 mg per hour</td>
+                    <td>Postoperative pain management</td>
+                    <td>150 mg/day</td>
+                    <td>Infusion should be diluted in glucose 5% or sodium chloride 0.9% buffered with sodium bicarbonate</td>
+                </tr>
+                <tr>
+                    <td>Intravenous Bolus Injection</td>
+                    <td>Diclofenac Sodium</td>
+                    <td>IV</td>
+                    <td>25 to 75 mg over 5 to 60 seconds</td>
+                    <td>Postoperative or acute pain</td>
+                    <td>Not specified</td>
+                    <td>May be repeated once after 4 to 6 hours</td>
+                </tr>
+                <tr>
+                    <td>Ophthalmic Solution (0.1%)</td>
+                    <td>Diclofenac Sodium</td>
+                    <td>Topical (Ophthalmic)</td>
+                    <td>1 drop per dose</td>
+                    <td>Cataract surgery, photorefractive keratectomy, ocular trauma, seasonal allergic conjunctivitis, strabismus surgery, laser trabeculoplasty</td>
+                    <td>Not specified</td>
+                    <td>Frequency depends on indication (2 to 4 times daily or as per protocol)</td>
+                </tr>
+                <tr>
+                    <td>Topical Gel (1%)</td>
+                    <td>Diclofenac Diethylamine</td>
+                    <td>Topical (Skin)</td>
+                    <td>Thin layer applied to affected area</td>
+                    <td>Localized pain, inflammation, osteoarthritis</td>
+                    <td>Not specified</td>
+                    <td>Applied three or four times daily for up to 14 to 28 days</td>
+                </tr>
+                <tr>
+                    <td>Topical Gel (3%)</td>
+                    <td>Diclofenac Sodium</td>
+                    <td>Topical (Skin)</td>
+                    <td>Applied twice daily for 60 to 90 days</td>
+                    <td>Actinic keratosis (precancerous skin condition)</td>
+                    <td>Not specified</td>
+                    <td>Full therapeutic effect may appear 30 days after treatment ends</td>
+                </tr>
+                <tr>
+                    <td>Medicated Plaster / Patch</td>
+                    <td>Diclofenac Epolamine</td>
+                    <td>Topical (Transdermal)</td>
+                    <td>One patch once daily (ankle sprain)<br>One patch twice daily (epicondylitis)</td>
+                    <td>Local pain, ankle sprain, tennis elbow (lateral epicondylitis)</td>
+                    <td>Maximum 3 days (ankle sprain), maximum 14 days (epicondylitis)</td>
+                    <td>Applied directly to affected area</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Drug Interactions Section -->
+        <div class="section" id="drug-interactions">
+            <h2 class="section-title">Drug Interactions</h2>
+            
+            <h3>Drug-Drug Interactions</h3>
+            <table>
+                <tr>
+                    <th>Drug</th>
+                    <th>Type of Interaction</th>
+                    <th>Clinical Outcome/Risk</th>
+                    <th>Recommendation</th>
+                </tr>
+                <tr>
+                    <td>Warfarin</td>
+                    <td>Pharmacokinetic (protein binding displacement) & Pharmacodynamic</td>
+                    <td>Increased risk of bleeding</td>
+                    <td>Monitor International Normalized Ratio (INR); consider alternative analgesic</td>
+                </tr>
+                <tr>
+                    <td>Methotrexate</td>
+                    <td>Pharmacokinetic (reduced renal clearance of methotrexate)</td>
+                    <td>Increased methotrexate toxicity</td>
+                    <td>Avoid or monitor renal function and methotrexate levels</td>
+                </tr>
+                <tr>
+                    <td>Cyclosporine</td>
+                    <td>Pharmacodynamic (renal additive toxicity)</td>
+                    <td>Risk of nephrotoxicity</td>
+                    <td>Use with caution and monitor renal function</td>
+                </tr>
+                <tr>
+                    <td>Lithium</td>
+                    <td>Pharmacokinetic (reduced lithium clearance)</td>
+                    <td>Lithium toxicity (tremors, confusion)</td>
+                    <td>Monitor serum lithium levels</td>
+                </tr>
+                <tr>
+                    <td>NSAIDs</td>
+                    <td>Pharmacodynamic (additive toxicity)</td>
+                    <td>Increased risk of gastrointestinal bleeding, renal toxicity</td>
+                    <td>Avoid concurrent use unless essential</td>
+                </tr>
+            </table>
+            
+            <h3>Drug Food Interactions</h3>
+            <table>
+                <tr>
+                    <th>Food Substance</th>
+                    <th>Effect on diclofenac</th>
+                    <th>Clinical concern</th>
+                    <th>Recommendations</th>
+                </tr>
+                <tr>
+                    <td>Food (general meals)</td>
+                    <td>Slows absorption slightly, reduces peak concentration</td>
+                    <td>Delayed gastric emptying</td>
+                    <td>May be taken with food to reduce gastric irritation, though best on empty stomach for faster onset</td>
+                </tr>
+                <tr>
+                    <td>Alcohol</td>
+                    <td>Increases risk of gastrointestinal bleeding</td>
+                    <td>Synergistic mucosal damage</td>
+                    <td>Avoid alcohol consumption during therapy</td>
+                </tr>
+            </table>
+            
+            <h3>Drug Disease Interactions</h3>
+            <table>
+                <tr>
+                    <th>Pre-existing Condition</th>
+                    <th>Effect of Diclofenac</th>
+                    <th>Clinical Concern</th>
+                    <th>Recommendation</th>
+                </tr>
+                <tr>
+                    <td>Peptic Ulcer Disease or Gastrointestinal Bleeding History</td>
+                    <td>Worsens condition; increases bleeding risk</td>
+                    <td>Gastrointestinal mucosal damage</td>
+                    <td>Contraindicated or co-prescribe proton pump inhibitor</td>
+                </tr>
+                <tr>
+                    <td>Renal Impairment</td>
+                    <td>May reduce renal perfusion and worsen renal function</td>
+                    <td>Risk of acute kidney injury</td>
+                    <td>Avoid or monitor renal function closely</td>
+                </tr>
+                <tr>
+                    <td>Hepatic Impairment</td>
+                    <td>Reduced metabolism; increased serum levels</td>
+                    <td>Risk of hepatotoxicity</td>
+                    <td>Use with caution; monitor liver function tests</td>
+                </tr>
+                <tr>
+                    <td>Cardiovascular Disease (e.g., Hypertension, Ischemic Heart Disease)</td>
+                    <td>Increases cardiovascular thrombotic risk</td>
+                    <td>May worsen blood pressure, cause fluid retention</td>
+                    <td>Use lowest effective dose for shortest duration</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Available Brands Section -->
+        <div class="section" id="brands">
+            <h2 class="section-title">Commonly available brands and dosage forms in Pakistan</h2>
+            <table class="brands-table">
+                <tr>
+                    <th>Sr #</th>
+                    <th>Brand Name</th>
+                    <th>Manufacturer</th>
+                    <th>Dosage Form</th>
+                    <th>Strength</th>
+                    <th>Pack Size</th>
+                                        <th>Image</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Caflam</td>
+                    <td>Novartis Pharma</td>
+                    <td>Tablet</td>
+                    <td>50 mg</td>
+                    <td>2x10 tablets</td>
+                    <td><img src="caflam_tablet.png" alt="Caflam Tablet"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Voltral</td>
+                    <td>Novartis Pharma</td>
+                    <td>Tablet</td>
+                    <td>25 mg, 50 mg, 100 mg</td>
+                    <td>2x10 tablets</td>
+                    <td><img src="voltral_tablet.png" alt="Voltral Tablet"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Voltral emulgel</td>
+                    <td>Novartis pharma</td>
+                    <td>Gel</td>
+                    <td>1%, 2%</td>
+                    <td>50 gm</td>
+                    <td><img src="voltral_gel.jpeg" alt="Voltral Gel"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Voren</td>
+                    <td>Asian Continental</td>
+                    <td>Tablet</td>
+                    <td>25 mg, 50 mg</td>
+                    <td>10x10's tablets</td>
+                    <td><img src="voren_tablet.png" alt="Voren Tablet"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Voren</td>
+                    <td>Asian Continental</td>
+                    <td>Injection</td>
+                    <td>75 mg/3ml</td>
+                    <td>1 inj. /strip</td>
+                    <td><img src="voren_injection.jpeg" alt="Voren Injection"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Dicloran</td>
+                    <td>Sami Pharmaceuticals</td>
+                    <td>Inj. IM/IV</td>
+                    <td>75 mg</td>
+                    <td>5 ampuoles/box</td>
+                    <td><img src="dicloran_injection.png" alt="Dicloran Injection"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Dicloran</td>
+                    <td>Sami Pharmaceuticals</td>
+                    <td>Tablets</td>
+                    <td>50 mg</td>
+                    <td>2x10 tablets</td>
+                    <td><img src="dicloran_tablet.png" alt="Dicloran Tablet"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Dciloran</td>
+                    <td>Sami Pharmaceuticals</td>
+                    <td>Gel</td>
+                    <td>2%</td>
+                    <td>30gm</td>
+                    <td><img src="dicloran_gel.jpeg" alt="Dicloran Gel"></td>
+                </tr>
+            </table>
+            <p><strong>PRICES MAY VARY depending on the strength and dosage forms.</strong></p>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="section" id="faqs">
+            <h2 class="section-title">FAQs - Diclofenac</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">1. Can I use Diclofenac with paracetamol?</p>
+                <p>✅ Yes. They can be used together for better pain control as they work via different mechanisms.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">2. How long can I use Diclofenac gel?</p>
+                <p>⏳ Usually 7-14 days. Prolonged use should be done only under medical supervision.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">3. What if I miss a dose?</p>
+                <p>⏱️ Take it as soon as you remember. If it's near the next dose, skip the missed one - don't double the dose.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">4. Can I drive after taking Diclofenac?</p>
+                <p>🚗 Usually yes but avoid driving if you feel dizzy or drowsy.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">5. Is Diclofenac safe for long-term use?</p>
+                <p>⚠️ Not recommended without medical advice due to risks like GI bleeding, kidney, and heart issues.</p>
+            </div>
+            
+            <div class="image-container">
+                <img src="diclofenac_faqs.jpeg" alt="Diclofenac FAQs">
+            </div>
+        </div>
+
+        <!-- References Section -->
+        <div class="section" id="references">
+            <h2 class="section-title">Reference:</h2>
+            <ul class="reference-list">
+                <li><em>Roger Walker, Clinical Pharmacy and Therapeutics, 6th ed., Chapter 26 - NSAIDs</em></li>
+                <li><em>Martindale: The Complete Drug Reference, 36<sup>th</sup> ed., Volume 1, Analgesics, Anti Inflammatory and Anti-pyretics</em></li>
+                <li><em><a href="https://go.drugbank.com/drugs/DB00586">https://go.drugbank.com/drugs/DB00586</a></em></li>
+                <li><em><a href="https://www.researchgate.net/figure/Quantification-of-diclofenac-pharmacokinetics-in-7-MPS-platform-Samples-for-diclofenac_fig4_323749994">https://www.researchgate.net/figure/Quantification-of-diclofenac-pharmacokinetics-in-7-MPS-platform-Samples-for-diclofenac_fig4_323749994</a></em></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active class in sidebar
+                document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Highlight current section in sidebar while scrolling
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const scrollPosition = window.scrollY;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
